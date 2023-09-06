@@ -1,0 +1,67 @@
+<html>
+<head>
+	<style>
+		.flexcont{
+			background-color: tomato;
+			display: flex;
+			flex-direction:row;
+			flex-wrap:wrap-reverse;
+			justify-content:center;
+			height: 100px;
+		}
+		.flexcont1{
+			background-color: tomato;
+			display: flex;
+			flex-direction:row;
+			flex-wrap:wrap-reverse;
+			justify-content:center;
+			height: 100px;
+		}
+		.flexcont2{
+			background-color: tomato;
+			display: flex;
+			flex-direction:row;
+			flex-wrap:wrap-reverse;
+			justify-content:center;
+		}
+	
+		.child{
+			background-color:green;
+			margin: 10px;
+			padding: 10px;
+			display: inline-block;
+			width: 100px;
+			text-align: center;
+
+		}
+		#h{
+			background-color: yellowgreen;
+			flex-grow: 3;
+
+		}
+        #m{
+        	align-self: flex-start;
+        	flex-grow: 5;
+        	height: 60px;
+        }
+        #k{
+        	flex-grow: 5;
+
+
+        }
+	</style>
+</head>
+<body>
+	<div class="flexcont">
+		<div class="child" id="h">html</div>
+		<div class="child" id="t">html2</div></div>
+		<div class="flexcont1">
+		<div class="child" id="m">html3</div>
+		<div class="child" id="l">html4</div>
+		<div class="child" id="c">html5</div></div>
+		<div class="flexcont2">
+		<div class="child" id="k">html6</div>
+	</div>
+
+	</body>
+</html>
