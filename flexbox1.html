@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>
+	</title>
+	<style>
+.container{
+	border:2px solid saddlebrown;
+	height:500px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:start; /* center,space-between,space-around,space-evenly 
+	/*align-items:flex-start;  flex-end,flex-start, */
+}
+.item{
+	border: 3px solid orange;
+	margin: 9px;
+	padding: 9px;
+	background-color: yellow;
+	height:100px;
+}
+#item1{
+	order: 2;
+	flex-grow: 2;
+	flex-shrink: 2;
+	flex-basis: 320 px;
+	flex: 2 2 320px;
+	align-self:flex-start;
+	height: 400px; /*flex-start,flx end,center */
+}
+#item2{
+	order: 40;
+}
+#item3{
+	order: 12;
+}
+#item4{
+	order: 12;
+	align-self: center;
+	height: 240px;
+}
+#diff{
+	align-self:center;
+	width:100px;
+	height:300px;
+
+}
+	</style>
+	</head>
+	<body>
+<div class="container">
+
+	<div class="item" id="item1">First item</div>
+	<div class="item" id="item2">second item</div>
+	<div class="item" id="item3">Third item</div>
+	<div class="item" id="item4">Fourth item</div>
+</div>
+	</body>
+</html>
